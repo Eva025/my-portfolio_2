@@ -1,0 +1,164 @@
+/* Reset 預設樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #f2e9dc;
+  color: #333;
+}
+
+/* 頁首區塊 */
+header {
+  text-align: center;
+  padding: 20px 200px;
+  background: linear-gradient(135deg, #afa689,#afa689);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* 導覽列 */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #8a7e66;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-nav li {
+  margin: 0 15px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 14px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.top-nav a:hover {
+  background-color: white;
+  color: #8a7e66;
+}
+
+/*基本資料*/
+.profile-box {
+  display: flex;
+  align-items: center;
+  background-color:#fffdfa;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px; /* 弧度：可調整為 50% 變成圓形 */
+}
+
+.profile-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* 標題：經歷 */
+.experience-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.experience-section h3 {
+  font-size: 1.3rem;       /* 字體大小 */
+  color: #333;             /* 深灰色文字 */
+  margin-bottom: 8px;
+  display: flex;   
+}
+
+/* 副標題或說明文字 */
+.experience-section p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* 圖片區塊：兩張一排靠右 */
+.experience-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 每排2張 */
+  gap: 20px;
+  justify-content: end; /* 圖片靠右 */
+  margin-top: 20px;
+
+}
+
+/* 單張圖片含標題 */
+.experience-images figure {
+  text-align: center;
+  margin: 0;
+}
+
+/* 圖片樣式 */
+.experience-images img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+/* 圖片 hover 放大效果 */
+.experience-images img:hover {
+  transform: scale(1.05);
+}
+
+/* 圖片下方標題 */
+.experience-images figcaption {
+  font-size: 1rem;
+  margin-top: 6px;
+  color: #555;
+}
+
+/* 第二、第四張往下交錯 */
+.experience-images figure:nth-child(2),
+.experience-images figure:nth-child(4) {
+  margin-top: 30px;
+}

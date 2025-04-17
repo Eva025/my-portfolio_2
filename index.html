@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>張綺庭的個人網站</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>張綺庭的個人簡介</h1>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="https://my-portfolio-nu-green-50.vercel.app/">首頁</a></li>
+        <li><a href="#test">生涯興趣測驗結果</a></li>
+        <li><a href="#job">MIS相關分析</a></li>
+        <li><a href="https://www.pu.edu.tw/" target="_blank">靜宜大學</a></li>
+        <li><a href="https://csim.pu.edu.tw/" target="_blank">靜宜大學資訊管理學系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="profile-box light">
+    <img src="image/me.jpg" class="profile-photo">
+    <div class="profile-info">
+      <h3>基本資料🐾</h3>
+      <p>姓名：張綺庭</p>
+      <p>學號：411203194</p>
+      <p>就讀大學及系所：靜宜大學 資訊管理學系</p>
+      <p>Email：94.05.25jj@gmail.com</p>
+    </div>
+  </section>
+
+  <section class="profile-box">
+  <div class="profile-info">
+    <h3>經歷🧸</h3>
+    <p>大二暑假到澳洲遊學一個月</p>
+    <p>擔任補教業老師</p>
+    <p>大一曾擔任班級模範生</p>
+    <p>高中曾擔任班長、副班長、社團社長</p>
+    <p>曾舉辦與他校大型營隊</p>
+  </div>
+ <!-- 卡片1 -->
+  <div class="experience-images">
+     <figure>
+      <img src="image/aus.jpg" alt="澳洲遊學">
+      <figcaption>澳洲遊樂園</figcaption>
+    </figure>
+
+  <!-- 卡片2 -->
+   <figure>
+      <img src="image/aaa.jpg" alt="畢業">
+      <figcaption>遊學結束</figcaption>
+    </figure>
+
+
+  <!-- 卡片3 -->
+  <figure>
+      <img src="image/activity.jpg" alt="社團活動">
+      <figcaption>擔任外迎隊輔</figcaption>
+    </figure>
+
+  <figure>
+      <img src="image/play.jpg" alt="社團活動">
+      <figcaption>補習班校外教學</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section class="profile-box light">
+    <div class="profile-info">
+      <h3>未來規劃✨</h3>
+      <p>我計畫於大學畢業後繼續攻讀本系碩士班，深化專業知識並培養更扎實的研究能力。在研究所階段，我希望能積極參與實作與專題研究，並爭取優異成績，未來有機會前往國外深造，拓展國際視野並提升自身實力。
+此外，對於未來的職涯規劃，我期許自己能夠進入具發展潛力的科技公司工作，發揮所學、累積實務經驗，為科技產業貢獻所長。</p>
+     
+    </div>
+  </section>
+
+<!-- 返回導覽列按鈕 -->
+<button onclick="scrollToTop()" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 16px; background-color: #9f8153; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  返回導覽列
+</button>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+
+</html>
