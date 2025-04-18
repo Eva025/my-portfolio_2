@@ -162,3 +162,27 @@ header p {
 .experience-images figure:nth-child(4) {
   margin-top: 30px;
 }
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    bottom: 15px;
+    right: 15px;
+  }
+}
