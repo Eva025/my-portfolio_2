@@ -69,9 +69,17 @@
     </div>
   </section>
 
-  <!-- ✅ 返回首頁按鈕 -->
-  <button onclick="window.location.href='index.html'" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 16px; background-color: #9f8153; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-    返回首頁
-  </button>
+  <button onclick="scrollToTop()" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 16px; background-color: #9f8153; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+  返回導覽列
+</button>
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
 </body>
 </html>
