@@ -133,5 +133,12 @@ header p {
 }
 
 .profile-info ul {
-  margin-left: 50px;  /* 或用 padding-left 也可以 */
+  margin-left: 50px;
+}
+
+.profile-photo2 {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px; /* 弧度：可調整為 50% 變成圓形 */
 }

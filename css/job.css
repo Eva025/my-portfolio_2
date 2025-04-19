@@ -1,0 +1,37 @@
+/* Reset 預設樣式 */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #f2e9dc;
+  color: #333;
+}
