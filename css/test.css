@@ -22,6 +22,7 @@
   }
 }
 
+/* === Reset 基本樣式 === */
 * {
   margin: 0;
   padding: 0;
@@ -35,24 +36,26 @@ body {
   color: #333;
 }
 
+/* === Header 標題區塊 === */
 header {
   text-align: center;
-  padding: 20px 200px;
+  padding: 20px 5%;
   background: linear-gradient(135deg, #afa689,#afa689);
   color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
+  word-break: break-word;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-/* 導覽列 */
+/* === 導覽列 === */
 .top-nav {
   position: sticky;
   top: 0;
@@ -67,10 +70,11 @@ header p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .top-nav li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .top-nav a {
@@ -87,6 +91,7 @@ header p {
   background-color: white;
   color: #8a7e66;
 }
+
 
 /*測驗結果*/
 .profile-box {
