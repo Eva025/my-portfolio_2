@@ -105,15 +105,168 @@ header p {
   padding: 0 20px;
 }
 
-.experience-section h3 {
-  font-size: 1.3rem;       /* 字體大小 */
-  color: #333;             /* 深灰色文字 */
-  margin-bottom: 8px;
-  display: flex;   
+/* === Reset 基本樣式 === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* 副標題或說明文字 */
-.experience-section p {
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #f2e9dc;
+  color: #333;
+}
+
+/* === Header 標題區塊 === */
+header {
+  text-align: center;
+  padding: 20px 5%;
+  background: linear-gradient(135deg, #afa689,#afa689);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+header p {
+  font-size: 1.1rem;
+}
+
+/* === 導覽列 === */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #8a7e66;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.top-nav li {
+  margin: 0 10px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 14px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.top-nav a:hover {
+  background-color: white;
+  color: #8a7e66;
+}
+
+/* === 內容區塊 === */
+.profile-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffdfa;
+  border-radius: 3px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 1000px;
+  gap: 40px;
+  width: 90%;
+}
+
+.profile-photo, .profile-photo2 {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.profile-info {
+  max-width: 600px;
+}
+
+.profile-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.profile-info ul {
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* === 響應式設計：手機板 === */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-box {
+    flex-direction: column;
+    width: 95%;
+    padding: 1.5rem;
+    gap: 20px;
+  }
+
+  .profile-photo, .profile-photo2 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .profile-info {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .profile-info ul {
+    margin-left: 0;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    bottom: 15px;
+    right: 15px;
+  }
+}.experience-section p {
   font-size: 1.1rem;
   margin-bottom: 5px;
   color: #555;
@@ -161,28 +314,4 @@ header p {
 .experience-images figure:nth-child(2),
 .experience-images figure:nth-child(4) {
   margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-  .profile-photo {
-    width: 120px;
-    height: 120px;
-  }
-
-  .profile-box {
-    width: 90%;
-    padding: 1.5rem;
-  }
-
-  .top-nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  button {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-    bottom: 15px;
-    right: 15px;
-  }
-}
+} 
