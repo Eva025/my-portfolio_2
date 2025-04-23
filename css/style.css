@@ -254,6 +254,17 @@ header p {
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.star-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.star-list li::before {
+  content: "★ ";
+  color: black;
+  margin-right: 8px;
+}
+
 /* === 響應式設計：手機板 === */
 @media (max-width: 768px) {
   header h1 {
@@ -287,7 +298,24 @@ header p {
     margin-left: 0;
   }
 
+.experience-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .experience-images figure {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .experience-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
 
   button {
     padding: 8px 12px;

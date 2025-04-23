@@ -148,6 +148,17 @@ header p {
   border-radius: 3px; /* 弧度：可調整為 50% 變成圓形 */
 }
 
+.sq-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sq-list li::before {
+  content: "✦";
+  color: black;
+  margin-right: 8px;
+}
+
 @media (max-width: 768px) {
   .profile-box {
     flex-direction: column;
